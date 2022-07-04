@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    list-style: none;
+  }
+  .hello {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    /*  背景图定位 / 背景图尺寸  cover 完全铺满容器  contain 完整显示在容器内 */
+    background: url(../assets/bg.jpg) no-repeat #000;
+    background-size: cover;
+    /* 行高是字体1.15倍 */
+    line-height: 1.15;
+  }
+  .mainbox {
+    min-width: 1024px;
+    max-width: 1920px;
+    padding: 0.125rem 0.125rem 0;
+  }
+  header {
+    position: relative;
+    background: url(../assets/head_bg.png) no-repeat top center;
+    height: 6rem;
+    background-size: 100% 100%;
+    h1 {
+      font-size: 2.2rem;
+      color: #fff;
+      text-align: center;
+      line-height: 5rem;
+    }
+    .showTime {
+      position: absolute;
+      top: 0;
+      right: 0.375rem;
+      line-height: 4.2rem;
+      font-size: 1rem;
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+  .panel {
+    position: relative;
+    height: 24rem;
+    border: 1px solid rgba(25, 186, 139, 0.17);
+    background: rgba(255, 255, 255, 0.04) url(../assets/line\(1\).png);
+    padding: 0 0.5rem 0.5rem;
+    margin-bottom: 1.1rem;
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-top: 2px solid #02a6b5;
+      border-left: 2px solid #02a6b5;
+    }
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-top: 2px solid #02a6b5;
+      border-right: 2px solid #02a6b5;
+    }
+    .panel-footer {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      &::before {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-bottom: 2px solid #02a6b5;
+        border-left: 2px solid #02a6b5;
+      }
+      &::after {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-bottom: 2px solid #02a6b5;
+        border-right: 2px solid #02a6b5;
+      }
+    }
+  
+    h2 {
+      height: 0.6rem;
+      line-height: 2.6rem;
+      text-align: center;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 400;
+      a {
+        margin: 0 0.1875rem;
+        color: #fff;
+        text-decoration: underline;
+      }
+    }
+    .chart {
+      height: 3rem;
+    }
+  }

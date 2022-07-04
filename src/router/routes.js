@@ -1,18 +1,18 @@
 const routes = [
     {
-        name: 'HelloWorld',
+        name: 'mainPage',
         path: '',
-        component: () => import('@/components/HelloWorld')
+        component: () => import('@/view/mainPage')
     },
     {
-        name: 'a',
-        path: '/a',
-        component: () => import('@/view/A')
+        name: 'quantityLine',
+        path: '/quantityLine',
+        component: () => import('@/view/quantityLine')
     },
     {
-        name: 'b',
-        path: '/b',
-        component: () => import('@/view/B')
+        name: 'quantityLine',
+        path: '/quantityLine',
+        component: () => import('@/view/LimitQuantity')
     },
     
 ];
