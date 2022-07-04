@@ -1,14 +1,16 @@
 <template>
    <router-view></router-view>
 </template>
-
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import mainPage from "./view/mainPage.vue";
 
 export default {
   name: "App",
+  setup(){
+    
+  },
   components: {
-    HelloWorld,
+    mainPage,
   },
 };
 </script>
