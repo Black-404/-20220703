@@ -80,10 +80,7 @@ export default {
       tableData,
      
     }
-    //  return {
-    //    tableData
-    //  }
-   
+  
   },
 };
 </script>

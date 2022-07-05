@@ -28,6 +28,9 @@ export default {
         legend: {
           data: ["Email", "Union Ads", "Video Ads", "Direct", "Search Engine"],
           padding:[20,0,0,0], 
+          textStyle:{
+            color:'rgb(255,255,255,0.9)'
+          }
         },
         grid: {      
           left: "3%",
@@ -43,7 +46,7 @@ export default {
         xAxis: {
           type: "category",
           boundaryGap: false,
-          data: ["1", "2", "3", "4", "6","7", "8", "9", "10", "11","12", "13", "14", "15", "16", "17", "18", "19","20","21","22"],
+          data: ["1", "2", "6", "7", "8","9", "10", "13", "14", "15","16", "17", "20"],
         },
         yAxis: {
           type: "value",
@@ -53,19 +56,19 @@ export default {
             name: "Email",
             type: "line",
             stack: "Total",
-            data: [120, 132, 101, 134, 90, 230, 210],
+            data: [81, 87, 84, 60, 60, 41, 93,68,61,56,65,64,92],
           },
           {
             name: "Union Ads",
             type: "line",
             stack: "Total",
-            data: [220, 182, 191, 234, 290, 330, 310],
+            data: [9, 7, 10, 10, 12, 7, 8,1,14,9,4,0,7],
           },
           {
             name: "Video Ads",
             type: "line",
             stack: "Total",
-            data: [150, 232, 201, 154, 190, 330, 410],
+            data: [17, 24, 21, 16, 14, 12, 12,16,15,14,12,9,23],
           },
          
         ],

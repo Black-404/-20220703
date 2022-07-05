@@ -21,14 +21,15 @@
           </div>
         </div>
       </el-col>
-      <el-col :span="10" style="display:flex;justify-content:center;"> 
+      <el-col :span="10" class="stylecenter"> 
          <cc-table/>
       </el-col>
       <el-col :span="7">
         <div class="column">
           <div class="panel line">
             <h2>折线图-人员变化</h2>
-            <div class="chart"></div>
+            <cc-plate/>
+            <!-- <div class="chart"></div> -->
             <div class="panel-footer"></div>
           </div>
           <div class="panel pie">
@@ -45,6 +46,7 @@
 <script>
 import LimitQuantity from './LimitQuantity';
 import quantityLine from './quantityLine';
+import plate from './plate';
 import table from './table';
 export default {
   name: "mainPage",
@@ -52,6 +54,7 @@ export default {
 			'cc-limit-quantity': LimitQuantity,
       'cc-quantity-line': quantityLine,
       'cc-table': table,
+      'cc-plate': plate,
 		
 		},
   props: {

@@ -28,6 +28,9 @@ export default {
         legend: {
           data: ["Email", "Union Ads", "Video Ads"],
           padding:[20,0,0,0], 
+          textStyle:{
+            color:'rgb(255,255,255,0.9)'
+          }
         },
         grid: {      
           left: "3%",
