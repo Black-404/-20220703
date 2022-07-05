@@ -21,7 +21,7 @@
           </div>
         </div>
       </el-col>
-      <el-col :span="10"> 
+      <el-col :span="10" style="display:flex;justify-content:center;"> 
          <cc-table/>
       </el-col>
       <el-col :span="7">
