@@ -7,8 +7,8 @@
       </div>
     </div>
     <div>
-      <div style="color:#fff;">后十</div>
-      <div style="margin: 10px 50px;color:#00CC00;" v-for="item in testData" :key="item">
+      <div style="color:#fff;">热搜</div>
+      <div style="margin: 10px 50px;color:#FF6600;" v-for="item in testData" :key="item">
         <div>{{ item }}</div>
       </div>
     </div>

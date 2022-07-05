@@ -29,12 +29,11 @@
           <div class="panel line">
             <h2>折线图-人员变化</h2>
             <cc-plate/>
-            <!-- <div class="chart"></div> -->
             <div class="panel-footer"></div>
           </div>
           <div class="panel pie">
             <h2>饼形图-年龄分布</h2>
-            <div class="chart"></div>
+            <cc-shares/>
             <div class="panel-footer"></div>
           </div>
         </div>
@@ -48,6 +47,7 @@ import LimitQuantity from './LimitQuantity';
 import quantityLine from './quantityLine';
 import plate from './plate';
 import table from './table';
+import shares from './shares';
 export default {
   name: "mainPage",
   components: {
@@ -55,6 +55,7 @@ export default {
       'cc-quantity-line': quantityLine,
       'cc-table': table,
       'cc-plate': plate,
+      'cc-shares': shares,
 		
 		},
   props: {

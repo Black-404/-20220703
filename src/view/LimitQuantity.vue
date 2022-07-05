@@ -26,7 +26,7 @@ export default {
           trigger: "axis",
         },
         legend: {
-          data: ["Email", "Union Ads", "Video Ads", "Direct", "Search Engine"],
+          data: ["涨停", "跌停", "连板"],
           padding:[20,0,0,0], 
           textStyle:{
             color:'rgb(255,255,255,0.9)'
@@ -53,22 +53,48 @@ export default {
         },
         series: [
           {
-            name: "Email",
+            name: "涨停",
             type: "line",
-            stack: "Total",
+            // stack: "Total",
             data: [81, 87, 84, 60, 60, 41, 93,68,61,56,65,64,92],
+           itemStyle : {  
+	                 normal : {  
+	                     color:'#CC0033',  
+	                     lineStyle:{  
+	                         color:'#FF0000	'  
+	                     }  
+	                 }  
+	             },  
+
+
           },
           {
-            name: "Union Ads",
+            name: "跌停",
             type: "line",
-            stack: "Total",
+            // stack: "Total",
             data: [9, 7, 10, 10, 12, 7, 8,1,14,9,4,0,7],
+             itemStyle : {  
+	                 normal : {  
+	                     color:'#33CC66',  
+	                     lineStyle:{  
+	                         color:'#33CC00	'  
+	                     }  
+	                 }  
+	             },  
           },
           {
-            name: "Video Ads",
+            name: "连板",
             type: "line",
-            stack: "Total",
+            // stack: "Total",
             data: [17, 24, 21, 16, 14, 12, 12,16,15,14,12,9,23],
+             itemStyle : {  
+	                 normal : {  
+	                     color:'#CC33CC',  
+	                     lineStyle:{  
+	                         color:'#CC00FF'  
+	                     }  
+	                 }  
+	             },  
           },
          
         ],
